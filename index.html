@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Zoo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    
+    <div id="point">
+        <h1>Giv dyrene mad</h1>
+            <span>Points:</span><p id="score">0</p>
+    </div>
+
+    <div class="oversigt">
+        <h2>Dyr</h2>
+            <p><em>Træk maden hen til dyrene</em></p>
+    <!-- </div>
+    <div class="animal" id="tiger" data-food="meat">
+        Tiger 🐯
+      </div>
+      <div class="animal" id="løve" data-food="meat">
+        Løve 🦁
+      </div>
+      <div class="animal" id="abe" data-food="fruit">
+        Abe 🐵 
+      </div>
+      <div class="animal" id="elefant" data-food="grass">
+        Elefant 🐘	
+      </div>
+      <div class="animal" id="flodhest" data-food="fruit">
+        Flodhest 🦛
+      </div>
+      <div class="animal" id="kroko" data-food="meat">
+        Krokodille 🐊
+      </div> -->
+
+      <div class="grid-container-element">
+        <div class="animal" data-food="meat"><img src="img/tiger.jpg" alt="" ></div>
+        <div class="animal" data-food="fruit"><img src="img/abe.avif" alt="" ></div>
+        <div class="animal" data-food="grass"><img src="img/elefant.jpg" alt="" ></div>
+        <div class="animal" data-food="meat"><img src="img/kroko.jpg" alt="" ></div>
+        <div class="animal" data-food="meat"><img src="img/løve.webp" alt="" ></div>
+        <div class="animal" data-food="fruit"><img src="img/flodhest.jpg" alt="" ></div>
+      </div>
+      
+<section class="mad">
+    <h3>Nuværende udvalg af mad</h3>
+      <div class="food">
+
+    <article id="æbler" draggable="true" data-food="fruit">Æbler 🍏</article>
+    <article id="banan" draggable="true" data-food="fruit">Banan 🍌</article>
+    <article id="vindruer" draggable="true" data-food="fruit">Vindruer 🍇</article>
+    <article id="steak" draggable="true" data-food="meat">Steak 🥩</article>
+    <article id="græs" draggable="true" data-food="grass">Græs 🌾</article>
+</div>
+</section>
+
+<br><br>
+
+
+<div class="buttons">
+  <div class="action_btn">
+  <button name="buyfood" class="btn_buy" type="submit" value="" onclick="openPopup()">Indkøb af mad 🛒</button>
+    <div class="popup" id="popup"> <h3>Mad der kan tilkøbes</h3> 
+      <div class="grid-container">
+        <div class="ny_mad" data-food="fruit"><button class="link">🍉 Vandmelon</button></div>
+        <div class="ny_mad" data-food="grass"><button class="link">🍀 Kløver </button></div>
+        <div class="ny_mad" data-food="meat"><button class="link">🦐 Rejer</button></div>
+        <div class="ny_mad" data-food="fruit"><button class="link">🌽 Majskolber</button></div>
+        <div class="ny_mad" data-food="meat"><button class="link">🍖 Kødben</button></div>
+        <div class="ny_mad" data-food="fruit"><button class="link">🥝 Kiwi</button></div>
+      </div>
+      <button type="button" onclick="closePopup()">Tilkøb</button>
+    </div>
+  <button class="btn_clean" draggable="true" data-clean="x">Rengør bur 🧹</button>
+  </div>
+</div>
+
+<br><br><br>
+
+
+</body>
+</html>
